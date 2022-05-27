@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 9;
+}
+
+header .navbar {
+  padding: 0;
+}
+
+header .navbar .navbar-brand img {
+  width: 80px;
+  height: 80px;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item {
+  margin: 0 1rem;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #181818;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(25px) !important;
+          transform: translateY(25px) !important;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #b61883;
+}
+
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after {
+  width: 10px;
+  height: 10px;
+  background-color: #b61883;
+}
+
+header .navbar .navbar-collapse .navbar-nav .active .nav-link::after {
+  width: 10px;
+  height: 10px;
+  background-color: #b61883;
+}
+
+header .navbar .navbar-collapse .navbar__phone {
+  background-color: #b61883;
+  padding: 0.7rem 1.4rem;
+  margin: 0 1rem;
+  border-radius: 2rem;
+  border: 1px solid #b61883;
+  text-decoration: none;
+  position: relative;
+}
+
+header .navbar .navbar-collapse .navbar__phone .content {
+  position: relative;
+}
+
+header .navbar .navbar-collapse .navbar__phone .content i, header .navbar .navbar-collapse .navbar__phone .content span {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+header .navbar .navbar-collapse .navbar__phone::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  background-color: white;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .navbar .navbar-collapse .navbar__phone:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+header .navbar .navbar-collapse .navbar__phone:hover i, header .navbar .navbar-collapse .navbar__phone:hover span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #b61883;
+}
+
+header .navbar .navbar-collapse .navbar__socials a {
+  margin: 0 0.2rem;
+  text-decoration: none;
+}
+
+header .navbar .navbar-collapse .navbar__socials a i, header .navbar .navbar-collapse .navbar__socials a .navbar__phone .content span, header .navbar .navbar-collapse .navbar__phone .content .navbar__socials a span, header .navbar .navbar-collapse .navbar__socials a .navbar__phone:hover span, header .navbar .navbar-collapse .navbar__phone:hover .navbar__socials a span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #191919;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .navbar .navbar-collapse .navbar__socials a:hover i, header .navbar .navbar-collapse .navbar__socials a:hover .navbar__phone .content span, header .navbar .navbar-collapse .navbar__phone .content .navbar__socials a:hover span, header .navbar .navbar-collapse .navbar__socials a:hover .navbar__phone:hover span, header .navbar .navbar-collapse .navbar__phone:hover .navbar__socials a:hover span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #b61883;
+}
+
+header .navbar button span i, header .navbar button span .navbar-collapse .navbar__phone .content span, header .navbar .navbar-collapse .navbar__phone .content button span span, header .navbar button span .navbar-collapse .navbar__phone:hover span, header .navbar .navbar-collapse .navbar__phone:hover button span span {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #b61883;
+}
+
+#carousel {
+  background: url(./../../images/Violet_top_left_wave.png) left bottom/contain no-repeat, url(./../../images/yellow_top_wave_01.png) left top/contain no-repeat;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#carousel .carousel__content {
+  padding: 60px 0;
+  height: 100%;
+}
+
+#carousel .carousel__content .row {
+  height: 100%;
+}
+
+#carousel .carousel__content .row .left p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61883;
+}
+
+#carousel .carousel__content .row .left h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+#carousel .carousel__content .row .right {
+  background: url(./../../images/hero_team.png) center/cover no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#testimonials {
+  background: url(./../../images/Wave_White_bottom_right_shape_01.png) bottom/contain no-repeat;
+  background-color: #dcd1f1;
+}
+
+#testimonials .content {
+  padding: 30px 0;
+}
+
+#course {
+  background: url(./../../images/accent_bottom_wave_01.png) bottom/contain no-repeat;
+  padding: 100px 0;
+}
+
+#course .content .row .left {
+  background: url(./../../images/conatct_inner.png) center/contain no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#course .content .row .right {
+  border: none;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 15px grey;
+          box-shadow: 0 5px 15px grey;
+  background-color: white;
+}
+
+#course .content .row .right .course__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#course .content .row .right .course__form form .contact__row {
+  margin-bottom: 1rem;
+}
+
+#course .content .row .right .course__form form .contact__row .contact__name, #course .content .row .right .course__form form .contact__row .contact__email {
+  padding-right: 1rem;
+  position: relative;
+}
+
+#course .content .row .right .course__form form .contact__row .contact__name input, #course .content .row .right .course__form form .contact__row .contact__email input {
+  padding-left: 2.5rem;
+  border-radius: 2rem;
+}
+
+#course .content .row .right .course__form form .contact__row .contact__name span, #course .content .row .right .course__form form .contact__row .contact__email span {
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+
+#course .content .row .right .course__form form .contact__row .contact__name span i, #course .content .row .right .course__form form .contact__row .contact__email span i, #course header .navbar .navbar-collapse .navbar__phone .content .row .right .course__form form .contact__row .contact__name span span, header .navbar .navbar-collapse .navbar__phone #course .content .row .right .course__form form .contact__row .contact__name span span, #course header .navbar .navbar-collapse .navbar__phone .content .row .right .course__form form .contact__row .contact__email span span, header .navbar .navbar-collapse .navbar__phone #course .content .row .right .course__form form .contact__row .contact__email span span, #course .content .row .right .course__form form .contact__row .contact__name span header .navbar .navbar-collapse .navbar__phone:hover span, #course .content .row .right .course__form form .contact__row .contact__email span header .navbar .navbar-collapse .navbar__phone:hover span {
+  color: #b61883;
+}
+
+#course .content .row .right .course__form form .contact__row .contact__email {
+  padding: 0;
+}
+
+#course .content .row .right .course__form form .language__select {
+  position: relative;
+}
+
+#course .content .row .right .course__form form .language__select #language {
+  padding-left: 2.3rem;
+  border-radius: 2rem;
+}
+
+#course .content .row .right .course__form form .language__select span {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+
+#course .content .row .right .course__form form .language__select span i, #course header .navbar .navbar-collapse .navbar__phone .content .row .right .course__form form .language__select span span, header .navbar .navbar-collapse .navbar__phone #course .content .row .right .course__form form .language__select span span, #course .content .row .right .course__form form .language__select span header .navbar .navbar-collapse .navbar__phone:hover span {
+  color: #b61883;
+}
+
+#course .content .row .right .course__form form .message__type {
+  position: relative;
+}
+
+#course .content .row .right .course__form form .message__type textarea {
+  width: 100%;
+  padding-top: 0.7rem;
+  padding-left: 2.3rem;
+  border-radius: 1.5rem;
+}
+
+#course .content .row .right .course__form form .message__type span {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+}
+
+#course .content .row .right .course__form form .message__type span i, #course header .navbar .navbar-collapse .navbar__phone .content .row .right .course__form form .message__type span span, header .navbar .navbar-collapse .navbar__phone #course .content .row .right .course__form form .message__type span span, #course .content .row .right .course__form form .message__type span header .navbar .navbar-collapse .navbar__phone:hover span {
+  color: #b61883;
+}
+
+#course .content .row .right .course__form form button {
+  border: 1px solid #b61883;
+  padding: 0.8rem 4rem;
+  text-align: center;
+  background-color: #b61883;
+  width: 30%;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+#course .content .row .right .course__form form button:hover {
+  background-color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #b61883;
+}
+
+#testimonials .content .row .card {
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  border: none;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#testimonials .content .row .card .card-body p:first-of-type {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #b61883;
+}
+
+#testimonials .content .row .card .card-body h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+#testimonials .content .row .card .card-body p:last-of-type {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #181818;
+}
+
+#testimonials .content .row .card:hover {
+  -webkit-box-shadow: 0 10px 30px grey;
+          box-shadow: 0 10px 30px grey;
+}
+
+#testimonials .content .row .card .img__top {
+  overflow: hidden;
+}
+
+#testimonials .content .row .card .img__top img {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#testimonials .content .row .card .img__top img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */
