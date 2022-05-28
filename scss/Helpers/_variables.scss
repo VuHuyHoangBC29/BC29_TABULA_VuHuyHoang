@@ -6,6 +6,7 @@ $color-4: #ffcf46;
 $color-5: #191919;
 $color-6: #181818;
 $color-7: white;
+$color-8: rgba(0, 0, 0, 0.096);
 
 //font-size
 
@@ -20,3 +21,15 @@ $fw-6: 600;
 $fw-7: 700;
 $fw-8: 800;
 $fw-9: 900;
+
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+    "extra-large-down": 1199.98px,
+    "large-down": 991.98px,
+    "medium-down": 767.98px,
+    "small-down": 575.98px,
+);

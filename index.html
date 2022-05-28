@@ -38,7 +38,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="container">
+    <header id="header" class="container">
       <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" href="#"
@@ -242,6 +242,7 @@
       </div>
     </section>
 
+    <!-- Course -->
     <section id="course">
       <div class="content container">
         <div class="row">
@@ -284,13 +285,18 @@
                   </div>
 
                   <div class="contact__row message__type">
-                    <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea
+                      class="form-control"
+                      name=""
+                      id="message"
+                      cols="30"
+                      rows="10"
+                      placeholder="Message"
+                    ></textarea>
                     <span><i class="fas fa-comment-dots"></i></span>
                   </div>
 
-                  <button>
-                    SEND
-                  </button>
+                  <button>SEND</button>
                 </form>
               </div>
             </div>
@@ -298,6 +304,74 @@
         </div>
       </div>
     </section>
+
+    <footer id="footer">
+      <div class="footer__content container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="contact">
+              <h3 class="text-white">Contact us</h3>
+              <p class="text-white">
+                <i class="fas fa-map-marker-alt"></i> Franklin St, Greenpoint
+                Ave
+              </p>
+              <p class="text-white">
+                <i class="fas fa-phone-alt"></i> +2342 5446 67
+              </p>
+              <p class="text-white">
+                <i class="fas fa-clock"></i> Monday - Friday: 8 AM - 5 PM
+              </p>
+
+              <div class="contact__socials">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="links">
+              <h3 class="text-white">Quick Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="about">
+              <h3 class="text-white">About</h3>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Get Quote</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="newsletter">
+              <h3 class="text-white">Newsletter</h3>
+              <div class="newsletter__content">
+                <input
+                  type="text"
+                  id="newsletter__email"
+                  class="form-control"
+                  placeholder="Your email"
+                />
+                <button>SUBSCRIBE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
