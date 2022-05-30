@@ -7,3 +7,24 @@
     padding: 30px 0;
   }
 }
+
+//responsive
+@media screen and (max-width: 991.98px) {
+  #testimonials {
+    .content {
+      .row {
+        .card {
+          .card-body {
+            p:first-of-type {
+              @include styleText(0.5rem, $fw-6, $color-3);
+            }
+
+            h3 {
+              @include styleText(1rem, $fw-7, $color-5);
+            }
+          }
+        }
+      }
+    }
+  }
+}

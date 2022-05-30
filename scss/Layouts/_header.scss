@@ -64,25 +64,26 @@ header {
         }
       }
 
-      .navbar__phone {
-        margin-right: 1rem;
-        border: 1px solid $color-3;
-        padding: 0.8rem 1rem;
-        background-color: $color-7;
-        border-radius: 2rem;
-        transition: 0.2s;
-        box-shadow: 0 0 0 3em $color-3 inset;
-        @include styleText(0.8rem, $fw-6, $color-7);
+      // .navbar__phone {
+      //   margin-right: 1rem;
+      //   @include styleButton(1px solid $color-3, 0.8rem, 1rem, $color-7, 2rem);
+      //   // border: 1px solid $color-3;
+      //   // padding: 0.8rem 1rem;
+      //   // background-color: $color-7;
+      //   // border-radius: 2rem;
+      //   transition: 0.2s;
+      //   box-shadow: 0 0 0 3em $color-3 inset;
+      //   @include styleText(0.8rem, $fw-6, $color-7);
 
-        &:hover {
-          box-shadow: 0 0 0 1px $color-3 inset;
-          @include styleText(0.8rem, $fw-6, $color-3);
-        }
+      //   &:hover {
+      //     box-shadow: 0 0 0 1px $color-3 inset;
+      //     @include styleText(0.8rem, $fw-6, $color-3);
+      //   }
 
-        .fa-phone {
-          margin-right: 0.5rem;
-        }
-      }
+      //   .fa-phone {
+      //     margin-right: 0.5rem;
+      //   }
+      // }
       // .navbar__phone {
       //   background-color: $color-3;
       //   padding: 0.7rem 1.4rem;
