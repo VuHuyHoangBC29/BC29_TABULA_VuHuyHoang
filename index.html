@@ -34,11 +34,19 @@
       crossorigin="anonymous"
     />
 
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <!-- Header -->
-    <header id="header" class="container">
+    <header id="header" class="container wow animate__animated animate__fadeIn">
       <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" href="#"
@@ -77,12 +85,16 @@
               <a class="nav-link" href="#">Elements</a>
             </li>
           </ul>
-
+          <!-- 
           <a class="navbar__phone" href="tel: (+1) 555 234-8765"
             ><div class="content">
               <i class="fas fa-phone"></i><span>(+1) 555 234-8765</span>
             </div></a
-          >
+          > -->
+
+          <button class="navbar__phone">
+            <i class="fas fa-phone"></i>(+1) 555 234-8765
+          </button>
 
           <div class="navbar__socials">
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -98,8 +110,13 @@
     <section id="carousel">
       <div class="carousel__content container">
         <div class="row">
-          <div class="col-lg-6 d-flex align-items-center">
-            <div class="left">
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-center"
+          >
+            <div
+              class="left wow animate__animated animate__fadeInLeft"
+              data-wow-delay="0.3s"
+            >
               <p>ABOUT US</p>
               <h1>
                 The language <br />
@@ -108,8 +125,11 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="right"></div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div
+              class="right wow animate__animated animate__fadeIn"
+              data-wow-delay="0.6s"
+            ></div>
           </div>
         </div>
       </div>
@@ -119,8 +139,8 @@
     <section id="testimonials">
       <div class="content container">
         <div class="row">
-          <div class="col-lg-3">
-            <div class="card text-left">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card wow animate__animated animate__fadeInLeft">
               <div class="img__top">
                 <img class="card-img-top" src="./images/teacher_1.jpg" alt="" />
               </div>
@@ -134,8 +154,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
-            <div class="card text-left">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card wow animate__animated animate__fadeInLeft">
               <div class="img__top">
                 <img class="card-img-top" src="./images/teacher_2.jpg" alt="" />
               </div>
@@ -149,8 +169,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
-            <div class="card text-left">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card wow animate__animated animate__fadeInLeft">
               <div class="img__top">
                 <img class="card-img-top" src="./images/teacher_3.jpg" alt="" />
               </div>
@@ -164,8 +184,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
-            <div class="card text-left">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card wow animate__animated animate__fadeInLeft">
               <div class="img__top">
                 <img class="card-img-top" src="./images/teacher_4.jpg" alt="" />
               </div>
@@ -179,8 +199,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
-            <div class="card text-left">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card wow animate__animated animate__fadeInLeft">
               <div class="img__top">
                 <img class="card-img-top" src="./images/teacher_5.jpg" alt="" />
               </div>
@@ -194,8 +214,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
-            <div class="card text-left">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card wow animate__animated animate__fadeInLeft">
               <div class="img__top">
                 <img class="card-img-top" src="./images/teacher_6.jpg" alt="" />
               </div>
@@ -209,8 +229,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
-            <div class="card text-left">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card wow animate__animated animate__fadeInLeft">
               <div class="img__top">
                 <img class="card-img-top" src="./images/teacher_7.jpg" alt="" />
               </div>
@@ -224,8 +244,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
-            <div class="card text-left">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card wow animate__animated animate__fadeInLeft">
               <div class="img__top">
                 <img class="card-img-top" src="./images/teacher_8.jpg" alt="" />
               </div>
@@ -247,11 +267,11 @@
       <div class="content container">
         <div class="row">
           <div class="col-lg-7">
-            <div class="left"></div>
+            <div class="left wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"></div>
           </div>
 
           <div class="col-lg-5">
-            <div class="right">
+            <div class="right wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
               <div class="course__form">
                 <h1 class="text-center">Find Your Course</h1>
                 <form>
@@ -309,7 +329,7 @@
       <div class="footer__content container">
         <div class="row">
           <div class="col-lg-3">
-            <div class="contact">
+            <div class="contact wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
               <h3 class="text-white">Contact us</h3>
               <p class="text-white">
                 <i class="fas fa-map-marker-alt"></i> Franklin St, Greenpoint
@@ -332,7 +352,7 @@
           </div>
 
           <div class="col-lg-3">
-            <div class="links">
+            <div class="links wow animate__animated animate__fadeInLeft" data-wow-delay="0.6s">
               <h3 class="text-white">Quick Links</h3>
               <ul>
                 <li><a href="#">Home</a></li>
@@ -344,7 +364,7 @@
           </div>
 
           <div class="col-lg-3">
-            <div class="about">
+            <div class="about wow animate__animated animate__fadeInLeft" data-wow-delay="0.9s">
               <h3 class="text-white">About</h3>
               <ul>
                 <li><a href="#">About us</a></li>
@@ -356,7 +376,7 @@
           </div>
 
           <div class="col-lg-3">
-            <div class="newsletter">
+            <div class="newsletter wow animate__animated animate__fadeInLeft" data-wow-delay="1.2s">
               <h3 class="text-white">Newsletter</h3>
               <div class="newsletter__content">
                 <input
@@ -390,5 +410,11 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Wowjs -->
+    <script src="/libs/wowjs/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
