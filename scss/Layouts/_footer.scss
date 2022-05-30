@@ -67,12 +67,14 @@
     }
 
     .newsletter {
-      padding-right: 3rem;
+      // padding-right: 3rem;
       h3 {
         @include styleText(1.5rem, $fw-7, $color-7);
       }
 
       .newsletter__content {
+        display: flex;
+        flex-direction: column;
         padding: 30px 0 0 0;
         input {
           padding: 1.5rem 0;
@@ -99,6 +101,7 @@
           // padding: 0.8rem 4rem;
           // background-color: $color-3;
           // border-radius: 2rem;
+          // width: 100%;
           @include styleButton(
             1px solid $color-7,
             0.8rem,
@@ -113,6 +116,64 @@
           &:hover {
             box-shadow: 0 0 0 0 $color-7 inset;
             @include styleText(0.9rem, $fw-6, $color-7);
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive
+@media screen and (max-width: 767px) {
+  #footer {
+    .footer__content {
+      .row {
+        .contact {
+          margin-bottom: 3rem;
+        }
+
+        .links {
+          padding-right: 2rem;
+
+          h3 {
+            font-size: 1.1rem;
+          }
+
+          ul {
+            li {
+              a {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+
+        .about {
+          padding-right: 2rem;
+
+          h3 {
+            font-size: 1.1rem;
+          }
+
+          ul {
+            li {
+              a {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+
+        .newsletter {
+          h3 {
+            font-size: 1.1rem;
+          }
+
+          .newsletter__content {
+            button {
+              font-size: 0.7rem;
+              padding: 1rem 0;
+            }
           }
         }
       }

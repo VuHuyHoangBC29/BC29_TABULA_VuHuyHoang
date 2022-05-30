@@ -64,76 +64,6 @@ header {
         }
       }
 
-      // .navbar__phone {
-      //   margin-right: 1rem;
-      //   @include styleButton(1px solid $color-3, 0.8rem, 1rem, $color-7, 2rem);
-      //   // border: 1px solid $color-3;
-      //   // padding: 0.8rem 1rem;
-      //   // background-color: $color-7;
-      //   // border-radius: 2rem;
-      //   transition: 0.2s;
-      //   box-shadow: 0 0 0 3em $color-3 inset;
-      //   @include styleText(0.8rem, $fw-6, $color-7);
-
-      //   &:hover {
-      //     box-shadow: 0 0 0 1px $color-3 inset;
-      //     @include styleText(0.8rem, $fw-6, $color-3);
-      //   }
-
-      //   .fa-phone {
-      //     margin-right: 0.5rem;
-      //   }
-      // }
-      // .navbar__phone {
-      //   background-color: $color-3;
-      //   padding: 0.7rem 1.4rem;
-      //   margin: 0 1rem;
-      //   border-radius: 2rem;
-      //   border: 1px solid $color-3;
-      //   text-decoration: none;
-      //   position: relative;
-
-      //   .content {
-      //     position: relative;
-      //     i {
-      //       margin-right: 0.5rem;
-      //       @include styleText(0.8rem, $fw-6, $color-7);
-      //     }
-
-      //     span {
-      //       // @include styleText(0.8rem, $fw-6, $color-7);
-      //       @extend i;
-      //     }
-      //   }
-
-      //   &::before {
-      //     content: "";
-      //     width: 100%;
-      //     height: 100%;
-      //     border-radius: 2rem;
-      //     position: absolute;
-      //     left: 0;
-      //     top: 0;
-      //     display: block;
-      //     background-color: $color-7;
-      //     transform: scale(0, 0);
-      //     transition: 0.2s;
-      //   }
-
-      //   &:hover {
-      //     &::before {
-      //       transform: scale(1, 1);
-      //     }
-      //     i {
-      //       color: $color-3;
-      //     }
-      //     span {
-      //       // @include styleText(0.8rem, $fw-6, $color-3);
-      //       @extend i;
-      //     }
-      //   }
-      // }
-
       .navbar__socials {
         a {
           margin: 0 0.2rem;
@@ -156,7 +86,7 @@ header {
 }
 
 // responsive
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1199px) {
   header {
     .navbar {
       .navbar-collapse {
@@ -170,33 +100,61 @@ header {
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 991px) {
   header {
     .navbar {
       .navbar-collapse {
         .navbar-nav {
           .nav-item {
-            margin: 0 0.3rem;
+            margin: 0 0.1rem;
 
             .nav-link {
               @include styleText(0.7rem, $fw-6, $color-6);
             }
           }
         }
+
+        .navbar__phone {
+          padding: 0.5rem 0.7rem;
+          margin: 0 0.7rem;
+          @include styleText(0.7rem, $fw-6, $color-7);
+
+          .fa-phone {
+            @include styleText(0.7rem, $fw-6, $color-7);
+            margin-right: 0.2rem;
+          }
+        }
       }
 
-      .navbar__phone {
-        padding: 0.5rem 0.7rem;
-        margin: 0 0.7rem;
-        .content {
-          i {
-            margin-right: 0.3rem;
-            @include styleText(0.6rem, $fw-6, $color-7);
-          }
+      // .navbar__phone {
+      //   padding: 0.5rem 0.7rem;
+      //   margin: 0 0.7rem;
+      //   @include styleText(0.7rem, $fw-6, $color-7);
 
-          span {
-            @include styleText(0.6rem, $fw-6, $color-7);
+      //   .fa-phone {
+      //     @include styleText(0.7rem, $fw-6, $color-7);
+      //     margin-right: 0.2rem;
+      //   }
+      // }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    .navbar {
+      .navbar-collapse {
+        background-color: $color-7;
+        .nav-item {
+          .nav-link {
+            &::after {
+              display: none !important;
+            }
           }
+        }
+
+        .navbar__phone {
+          margin: 0 0 0.5rem 0;
         }
       }
     }

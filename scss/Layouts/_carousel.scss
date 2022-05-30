@@ -3,9 +3,9 @@
       no-repeat,
     url(./../../images/yellow_top_wave_01.png) left top/contain no-repeat;
   height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
   .carousel__content {
     padding: 60px 0;
@@ -34,18 +34,20 @@
 }
 
 //responsive
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1199px) {
   #carousel {
     height: 100vh;
     .carousel__content {
       .row {
         .left {
           p {
-            @include styleText(0.9rem, $fw-6, $color-3);
+            // @include styleText(0.9rem, $fw-6, $color-3);
+            font-size: 0.9rem;
           }
 
           h1 {
-            @include styleText(3rem, $fw-7, $color-5);
+            // @include styleText(3rem, $fw-7, $color-5);
+            font-size: 3rem;
           }
         }
 
@@ -57,18 +59,20 @@
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 991px) {
   #carousel {
     height: 100vh;
     .carousel__content {
       .row {
         .left {
           p {
-            @include styleText(0.8rem, $fw-6, $color-3);
+            // @include styleText(0.8rem, $fw-6, $color-3);
+            font-size: 0.8rem;
           }
 
           h1 {
-            @include styleText(2.5rem, $fw-7, $color-5);
+            // @include styleText(2.5rem, $fw-7, $color-5);
+            font-size: 2.5rem;
           }
         }
 
@@ -85,11 +89,17 @@
     height: 100vh;
     .carousel__content {
       .row {
-        .col-md-6 {
-          height: 50%;
+        .left {
+          width: 100%;
+          text-align: center;
+        }
+
+        .right {
+          height: 100%;
+          width: 100%;
+            background: url(./../../images/hero_team.png) center/contain no-repeat;
         }
       }
     }
   }
 }
-
